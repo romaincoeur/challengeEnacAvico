@@ -6,373 +6,430 @@
     <meta name="Description" content="Inscrivez vous gratuitement à ce concours national de la création d'entreprise.">
     <meta name="Keywords" content="Concours ENAC Avico, concours, prix, dotations, laureats, partenaires, ENAC, Avico, creation d'entreprise, accompagnement, suivi, reseau regional, financement, entreprendre, formation, TPE">
 
+    <!-- no cache -->
+    <META http-equiv="Cache-Control" content="no-cache">
+    <META http-equiv="Pragma" content="no-cache">
+    <META http-equiv="Expires" content="0">
+
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.carouFredSel.js"></script>
+    <script type="text/javascript" src="js/jqueryRotate.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            var $c = $('#carousel'),
+                    $w = $(window);
+
+            $c.carouFredSel({
+                align: false,
+                items: 2,
+                height: "50px",
+                width: "300px",
+                scroll: {
+                    items: 1,
+                    duration: 5000,
+                    timeoutDuration: 0,
+                    easing: 'linear',
+                    pauseOnHover: 'immediate'
+                }
+            });
+
+
+            $w.bind('resize.example', function() {
+                var nw = 400;
+
+                $c.width(nw * 3);
+                //$c.parent().width(300);
+
+            }).trigger('resize.example');
+
+        });
+    </script>
 
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>-->
+
 </head>
 <body>
 
-
-<header>
-    <div class="bg-darkblue" style="height: 20px;"></div>
-    <img src="images/logo.png" alt="logo">
-    <h1><span class="grey">CHALLENGE</span><br><span class="darkblue">ENAC ALUMNI - AVICO</span></h1>
-</header>
-
-
-<div id="slideshow" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#slideshow" data-slide-to="0" class="active"></li>
-        <li data-target="#slideshow" data-slide-to="1"></li>
-        <li data-target="#slideshow" data-slide-to="2"></li>
-        <li data-target="#slideshow" data-slide-to="3"></li>
-        <li data-target="#slideshow" data-slide-to="4"></li>
-        <li data-target="#slideshow" data-slide-to="5"></li>
-        <li data-target="#slideshow" data-slide-to="6"></li>
-        <li data-target="#slideshow" data-slide-to="7"></li>
-        <li data-target="#slideshow" data-slide-to="8"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="images/slideshow/Slideshow%20a380mirage.png" alt="panoramique1">
-        </div>
-        <div class="item">
-            <img src="images/slideshow/Slideshow%20affaire.png" alt="panoramique2">
-        </div>
-        <div class="item">
-            <img src="images/slideshow/Slideshow%20b200.png" alt="panoramique3">
-
-        </div>
-        <div class="item">
-            <img src="images/slideshow/Slideshow%20bandes%20bleues%20claires.png" alt="panoramique4">
-
-        </div>
-        <div class="item">
-            <img src="images/slideshow/Slideshow%20boeing.png" alt="panoramique5">
-
-        </div>
-        <div class="item">
-            <img src="images/slideshow/Slideshow%20couchersoleil.png" alt="panoramique5">
-
-        </div>
-        <div class="item">
-            <img src="images/slideshow/Slideshow%20décollage.png" alt="panoramique5">
-
-        </div>
-        <div class="item">
-            <img src="images/slideshow/Slideshow%20hub.png" alt="panoramique5">
-            <div class="carousel-caption">
-                panoramique8
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/slideshow/Slideshow%20trainéeciel.png" alt="panoramique5">
-
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#slideshow" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#slideshow" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-</div>
-
-
-<div class="wrap">
-<div class="row">
-    <div class="col-md-3">
-        <img src="images/dates.png" alt="dates" style="width: initial; height: initial;">
-    </div>
-    <div class="col-md-7">
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            <img src="images/question.png" alt="question">
-                            <h3>POURQUOI CE CHALLENGE ?</h3>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="yellow">></span> Ce Challenge a pour vocation d’accompagner,
-                            stimuler et inciter les candidats à la création
-                            d’entreprise dans le monde de l’aérien, à
-                            passer à l’acte, en bénéficiant du support de
-                            professionnels du secteur, et d’un prix pour les
-                            meilleurs projets.</p>
-
-                        <p><span class="yellow">></span> Donner l’opportunité aux Challenger
-                            d’approfondir leur concept en le confrontant
-                            à l’avis de professionnels du secteur aérien et à
-                            des entrepreneurs, et en lui offrant une visibilité
-                            certaine.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                            <img src="images/ecrous.png" alt="ecrous">
-                            <h3>COMMENT PARTICIPER ?</h3>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="yellow">></span> Les Challengers déposent sur le site
-                            ChallengeEnacAlumniAvico.com un abstract
-                            de présentation de leur projet de création
-                            d’entreprise, avant le 31 octobre 2014</p>
-                        <p><span class="yellow">></span> Les Challengers bénéficieront également d’un
-                            support dans leur projet pendant le Challenge,
-                            et d’une visibilité auprès du grand public et des
-                            professionnels de l’aérien pour les lauréats.</p>
-                        <p><span class="yellow">></span> Le projet est présenté par les Challengers
-                            devant jury lors une journée de soutenance
-                            orale courant février 2015.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                            <img src="images/cup.png" alt="cup">
-                            <h3>LES PRIX</h3>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="yellow">></span> Des prix seront donc attribués aux 3 premières
-                            équipes de Challengers,</p>
-                        <p><span class="yellow">></span> Le premier prix sera de 10 000 €, les prix suivants
-                            de 5 000 € et 3 000 € ainsi que d’autres dotations
-                            offertes par nos partenaires,</p>
-                        <p><span class="yellow">></span> Les Challengers bénéficieront également d’un
-                            support dans leur projet pendant le Challenge,
-                            et d’une visibilité auprès du grand public et des
-                            professionnels de l’aérien pour les lauréats.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                            <img src="images/bonhommes.png" alt="bonhommes">
-                            <h3>QUI SONT LES CHALLENGERS ?</h3>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseFour" class="panel-collapse collapse">
-                    <p><span class="yellow">></span> Le Challenge est ouvert à tous à tous
-                        sans disctinction d’age, de formation, ou de
-                        nationalité,</p>
-                    <p><span class="yellow">></span> Les Challengers peuvent se présenter seuls ou
-                        par équipe,</p>
-                    <p><span class="yellow">></span> Le jury aura à coeur de sélectionner et
-                        promouvoir le meilleur projet, les dossiers
-                        présentés par des anciens élèves de l’ENAC ne
-                        feront l’objet d’aucune préférence.</p>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                            <img src="images/tuteurs.png" alt="tuteurs">
-                            <h3>L’ACCOMPAGNEMENT DES CHALLENGERS</h3>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseFive" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="yellow">></span> Les Challengers pourront s’appuyer sur les
-                            conseils des tuteurs du Challenge pour préparer
-                            leur Business Plan et nouer de nouveaux contacts
-                            professionnels,</p>
-                        <p><span class="yellow">></span> Une cinquantaine de tuteurs, issus d’entreprises
-                            de transport aérien, de l’industrie aéronautique,
-                            du monde financier, des services officiels,
-                            membres de l’Enac Alumni Executive Club, du
-                            Club Entrepreneur, apporteront leur appui aux
-                            Challengers pendant la durée du concours,</p>
-                        <p><span class="yellow">></span> Les tuteurs ne sont pas membres du jury et
-                            l’accompagnement des Challengers n’est pas
-                            obligatoire.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-                            <img src="images/check.png" alt="check">
-                            <h3>LE JURY</h3>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseSix" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="yellow">></span> Seront évalués : l’originalité de l’idée, la viabilité
-                            du projet dans son ensemble, l’énergie et le
-                            réalisme des Challengers</p>
-                        <p><span class="yellow">></span> Le jury est composé de représentants du secteur
-                            aérien, mais également du secteur bancaire, de
-                            l’innovation, etc.,</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-2">
-        <div class="file bg-lightGrey">
-            <div class="title">Réglement</div>
-            <a href="files/1405_AD-2.LFJR.pdf"><img src="images/logo_pdf.png"></a>
-        </div>
-        <div class="file bg-grey">
-            <div class="title">Présentation du jury</div>
-            <a href="files/20130308_Jobsenboite_DevenirHote.pdf"><img src="images/logo_pdf.png"></a>
-        </div>
+<div id="chargement">
+    <div class="content">
+        <img src="images/anime.gif" alt="anime gif">
+        <p>...CHARGEMENT...</p>
     </div>
 </div>
-</div>
 
-<!--    <div class="infos row">
-        <div class="col-md-4">
-            <div class="title clearfix">
-                <img src="images/question.png" alt="question">
-                <h3>POURQUOI CE CHALLENGE ?</h3>
-            </div>
-            <p><span class="yellow">></span> Ce Challenge a pour vocation d’accompagner,
-                stimuler et inciter les candidats à la création
-                d’entreprise dans le monde de l’aérien, à
-                passer à l’acte, en bénéficiant du support de
-                professionnels du secteur, et d’un prix pour les
-                meilleurs projets.</p>
+<div id="site" style="visibility:hidden;">
 
-            <p><span class="yellow">></span> Donner l’opportunité aux Challenger
-                d’approfondir leur concept en le confrontant
-                à l’avis de professionnels du secteur aérien et à
-                des entrepreneurs, et en lui offrant une visibilité
-                certaine.</p>
-        </div>
-        <div class="col-md-4">
-            <div class="title clearfix">
-                <img src="images/ecrous.png" alt="ecrous">
-                <h3>COMMENT PARTICIPER ?</h3>
-            </div>
-            <p><span class="yellow">></span> Les Challengers déposent sur le site
-                ChallengeEnacAlumniAvico.com un abstract
-                de présentation de leur projet de création
-                d’entreprise, avant le 31 octobre 2014</p>
-            <p><span class="yellow">></span> Les Challengers bénéficieront également d’un
-                support dans leur projet pendant le Challenge,
-                et d’une visibilité auprès du grand public et des
-                professionnels de l’aérien pour les lauréats.</p>
-            <p><span class="yellow">></span> Le projet est présenté par les Challengers
-                devant jury lors une journée de soutenance
-                orale courant février 2015.</p>
-        </div>
-        <div class="col-md-4">
-            <div class="title clearfix">
-                <img src="images/cup.png" alt="cup">
-                <h3>LES PRIX</h3>
-            </div>
-            <p><span class="yellow">></span> Des prix seront donc attribués aux 3 premières
-                équipes de Challengers,</p>
-            <p><span class="yellow">></span> Le premier prix sera de 10 000 €, les prix suivants
-                de 5 000 € et 3 000 € ainsi que d’autres dotations
-                offertes par nos partenaires,</p>
-            <p><span class="yellow">></span> Les Challengers bénéficieront également d’un
-                support dans leur projet pendant le Challenge,
-                et d’une visibilité auprès du grand public et des
-                professionnels de l’aérien pour les lauréats.</p>
-        </div>
-    </div>
-
-    <div class="infos row">
-        <div class="col-md-4">
-            <div class="title clearfix">
-                <img src="images/bonhommes.png" alt="bonhommes">
-                <h3>QUI SONT LES CHALLENGERS ?</h3>
-            </div>
-            <p><span class="yellow">></span> Le Challenge est ouvert à tous à tous
-                sans disctinction d’age, de formation, ou de
-                nationalité,</p>
-            <p><span class="yellow">></span> Les Challengers peuvent se présenter seuls ou
-                par équipe,</p>
-            <p><span class="yellow">></span> Le jury aura à coeur de sélectionner et
-                promouvoir le meilleur projet, les dossiers
-                présentés par des anciens élèves de l’ENAC ne
-                feront l’objet d’aucune préférence.</p>
-        </div>
-        <div class="col-md-4">
-            <div class="title clearfix">
-                <img src="images/tuteurs.png" alt="tuteurs">
-                <h3>L’ACCOMPAGNEMENT DES CHALLENGERS</h3>
-            </div>
-            <p><span class="yellow">></span> Les Challengers pourront s’appuyer sur les
-                conseils des tuteurs du Challenge pour préparer
-                leur Business Plan et nouer de nouveaux contacts
-                professionnels,</p>
-            <p><span class="yellow">></span> Une cinquantaine de tuteurs, issus d’entreprises
-                de transport aérien, de l’industrie aéronautique,
-                du monde financier, des services officiels,
-                membres de l’Enac Alumni Executive Club, du
-                Club Entrepreneur, apporteront leur appui aux
-                Challengers pendant la durée du concours,</p>
-            <p><span class="yellow">></span> Les tuteurs ne sont pas membres du jury et
-                l’accompagnement des Challengers n’est pas
-                obligatoire.</p>
-        </div>
-        <div class="col-md-4">
-            <div class="title clearfix">
-                <img src="images/check.png" alt="check">
-                <h3>LE JURY</h3>
-            </div>
-            <p><span class="yellow">></span> Seront évalués : l’originalité de l’idée, la viabilité
-                du projet dans son ensemble, l’énergie et le
-                réalisme des Challengers</p>
-            <p><span class="yellow">></span> Le jury est composé de représentants du secteur
-                aérien, mais également du secteur bancaire, de
-                l’innovation, etc.,</p>
-        </div>
-    </div>-->
-
-
-
-<footer class="clearfix bg-darkblue">
+<header class="clearfix">
     <div class="wrap">
         <div class="left">
-            <img src="images/logo_enacalumni.png" alt="logo enac alumni">
-            <img id="avico" src="images/avico_logo.jpg" alt="logo avico">
+            <img src="images/logo.png" alt="logo">
+            <h1><span class="grey">Challenge</span><br><span class="subtitle">ENAC ALUMNI - AVICO</span></h1>
         </div>
-        <div id="social">
-            <a href="http://www.facebook.com/pages/ENAC-Alumni/272902146100648?ref=hl"><img class="social" src="images/facebook.png" alt="logo facebook"></a>
-            <a href="http://www.linkedin.com/groups?gid=37469&trk=hb_side_g"><img class="social" src="images/linkedin.png" alt="logo linkedin"></a>
-            <a href="http://www.viadeo.com/hub/accueil/?containerId=0021gcb2osdiktmd"><img class="social" src="images/viadeo.png" alt="logo viadeo"></a>
+        <div class="right">
+            <div id="wrapper">
+                <div id="carousel">
+                    <div>
+                        <a href="http://www.aerobuzz.fr/" target="_blank">
+                            <img src="images/partners/aerobuzz.png" alt="aerobuzz" height="50" />
+                            <span>Aérobuzz</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.aigle-azur.com/" target="_blank">
+                            <img src="images/partners/aigle.png" alt="aigle azur" height="50" />
+                            <span>Aigle Azur</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.avico.com/" target="_blank">
+                            <img src="images/partners/avico.png" alt="avico" height="50" />
+                            <span>Avico</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.toulouse.cci.fr/site/reliantis/" target="_blank">
+                            <img src="images/partners/cci-toulouse.png" alt="CCI Toulouse" height="50" />
+                            <span>CCI Toulouse</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://easa.europa.eu/" target="_blank">
+                            <img src="images/partners/easa.png" alt="EASA" height="50" />
+                            <span>EASA</span>
+                        </a>
+                    </div>
+                </div>
+                <!--<div id="degrade-left"></div>
+                <div id="degrade-right"></div>-->
+            </div>
+        </div>
+        <div id="downloads">
+            <div class="content" style="height: 0px;">
+                <a href="">
+                    <div class="document" style="margin-top: 5px;">
+                        <img src="images/iconePdf.png" alt="pdf">
+                        <p>REGLEMENT</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="document">
+                        <img src="images/iconePdf.png" alt="pdf">
+                        <p>BULLETIN D'INSCRIPTION</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="document">
+                        <img src="images/iconePdf.png" alt="pdf">
+                        <p>LE JURY</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="document">
+                        <img src="images/iconePdf.png" alt="pdf">
+                        <p>LES CRITERES DE NOTATION</p>
+                    </div>
+                </a>
+            </div>
+            <div class="header collapsed">
+                DOCUMENTS PRATIQUES
+                <img src="images/fleche_y.png" alt="fleche">
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--
+<div id="slideshow">
+    <img class="1" src="images/slideshow/008.jpg" alt="008">
+    <img class="2" src="images/slideshow/002.jpg" alt="002" style="display: none">
+    <img class="3" src="images/slideshow/003.jpg" alt="003" style="display: none">
+    <img class="4" src="images/slideshow/004.jpg" alt="004" style="display: none">
+</div>-->
+<div class="wrap">
+    <div class="row" style="margin-top: 84px;">
+        <div id="timeline" class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+            <img src="images/calendrier.png" alt="calendrier" id="calendar">
+
+            <div class="month" id="mai">
+                <img src="images/bouton.png" alt="bouton" class="icon">
+                <img src="images/mai.png" alt="mai" class="hover" id="maiImg">
+            </div>
+
+            <div class="month" id="octobre">
+                <img src="images/bouton.png" alt="bouton" class="icon">
+                <img src="images/octobre.png" alt="octobre" class="hover" id="octobreImg">
+            </div>
+
+            <div class="month" id="janvier">
+                <img src="images/bouton.png" alt="bouton" class="icon">
+                <img src="images/janvier.png" alt="janvier" class="hover" id="janvierImg">
+            </div>
+
+            <div class="month" id="fevrier">
+                <img src="images/bouton.png" alt="bouton" class="icon">
+                <img src="images/fevrier.png" alt="fevrier" class="hover" id="fevrierImg">
+            </div>
+        </div>
+
+        <div class="col-md-9 col-lg-9 col-sm-9 col-xs-9">
+            <div class="banner clearfix">
+                <div class="quote" id="q1">
+                    <img src="images/photos/polacco.png" alt="Michel Polacco">
+                    <div class="commentaire">
+                        <p style="font-style: italic;">"Le challenge ENAC Alumni permet aux futur challengers de bénéficier du
+                            soutien et du regard d'un tuteur professionnel du secteur qui l'accompagnera dans sa démarche..."</p>
+                        <p><span style="font-weight: bold;">MICHEL POLACCO</span> - Secrétaire Général de l'information du Gropue
+                            Radio France, Expert Aéronautique-Espace-Défense Membre du jury du Challenge ENAC Alumni Avico </p>
+                    </div>
+                </div>
+                <div class="quote" id="q2" style="display: none">
+                    <img src="images/photos/franck_goldnadel.jpg" alt="Frank Goldnadel">
+                    <div class="commentaire">
+                        <p style="font-style: italic;">"Une entreprise qui réussit est le fruit d'un savant équilibre
+                            entre ses différentes composantes : un produit bien pensé, un développement planifié, une
+                            équipe solide, un financement maîtrisé, et une stratégie commerciale qui fonctionne !
+                            J'invite les Challengers à garder cela en tête tout au long de leurs réflexions.."</p>
+                        <p><span style="font-weight: bold;">Franck Goldnadel</span> - Directeur de l’Aéroport Paris-CDG</p>
+                    </div>
+                </div>
+                <div class="quote" id="q3" style="display: none">
+                    <img src="images/photos/polacco.png" alt="Michel Polacco">
+                    <div class="commentaire">
+                        <p style="font-style: italic;">"Le challenge ENAC Alumni permet aux futur challengers de bénéficier du
+                            soutien et du regard d'un tuteur professionnel du secteur qui l'accompagnera dans sa démarche..."</p>
+                        <p><span style="font-weight: bold;">MICHEL POLACCO</span> - Secrétaire Général de l'information du Gropue
+                            Radio France, Expert Aéronautique-Espace-Défense Membre du jury du Challenge ENAC Alumni Avico </p>
+                    </div>
+                </div>
+                <div class="quote" id="q4" style="display: none">
+                    <img src="images/photos/franck_goldnadel.jpg" alt="Frank Goldnadel">
+                    <div class="commentaire">
+                        <p style="font-style: italic;">"Une entreprise qui réussit est le fruit d'un savant équilibre
+                            entre ses différentes composantes : un produit bien pensé, un développement planifié, une
+                            équipe solide, un financement maîtrisé, et une stratégie commerciale qui fonctionne !
+                            J'invite les Challengers à garder cela en tête tout au long de leurs réflexions.."</p>
+                        <p><span style="font-weight: bold;">Franck Goldnadel</span> - Directeur de l’Aéroport Paris-CDG</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <div id="accordion">
+                    <div class="header" id="a1">
+                        <img src="images/barre_challenge.png" alt="CHALLENGE" class="title">
+                        <img src="images/fleche.png" alt="fleche" class="fleche">
+                    </div>
+                    <div class="body a1">
+                        <p>Le Challenge ENAC Alumni – Avico est un concours de création d’entreprise dans le domaine
+                            aéronautique. Il est porté par ENAC Alumni avec le soutien d’Avico, son partenaire fondateur.</p>
+
+                        <p>2014 est l’année du lancement de la <span style="font-weight: bold;">toute première édition</span> du Challenge ! L’objectif commun
+                            d’ENAC Alumni et d’Avico est de récompenser <span style="font-weight: bold;">les meilleurs projets innovants</span> chaque année, de
+                            devenir un <span style="font-weight: bold;">véritable laboratoire d’idées connu et reconnu</span>.</p>
+
+                        <p>Nous souhaitons <span style="font-weight: bold;">faire émerger des idées novatrices</span> dans le domaine de l’aéronautique et <span style="font-weight: bold;"></span>stimuler
+                            la fibre entrepreneuriale chez les jeunes, moins jeunes, expérimentés ou néophytes qui se
+                            lanceraient dans l’aventure du Challenge.</p>
+
+                        <p>Le Challenge ENAC Alumni Avico est <span style="font-weight: bold;">ouvert à tous</span> à partir de 18 ans, sans distinction de formation,
+                            de parcours, ou de nationalité. Les Challengers peuvent se présenter seuls ou par équipe. Le jury
+                            aura à cœur de sélectionner et promouvoir le meilleur projet, les dossiers présentés par des anciens
+                            élèves de l’ENAC ne feront l’objet d’aucune préférence.</p>
+
+                        <p>Les Challengers seront également invités à participer au « coup de cœur du web », un concours
+                            dans le concours qui permet d’exposer son projet au grand public et de bénéficier du support
+                            d’une plateforme de crowdfunding&nbsp;: wiseed.</p>
+                    </div>
+                    <div class="header" id="a2">
+                        <img src="images/barre_participer.png" alt="PARTICIPER" class="title">
+                        <img src="images/fleche.png" alt="fleche" class="fleche">
+                    </div>
+                    <div class="body a2">
+                        <ol>
+                            <li>
+                                Complétez le bulletin de participation et retournez-le à
+                                <a href="mailto:contact@challengeenacalumniavico.com">contact@challengeenacalumniavico.com</a>
+                                <span style="font-weight: bold;">avant le 31 octobre 2014</span>
+                            </li>
+                            <li>
+                                Vous recevrez <span style="font-weight: bold;">sous 7 jours</span> un mail du Jury vous indiquant si votre projet est retenu,
+                            </li>
+                            <li>
+                                Vous aurez <span style="font-weight: bold;">jusqu’à 45 jours avant la soutenance</span> orale
+                                pour rédiger un <span style="font-weight: bold;">business plan de 30</span> pages maximum à remettre au jury,
+                            </li>
+                            <li>
+                                Les Challengers qui en font la demande pourront être <span style="font-weight: bold;">accompagnés par un tuteur</span> dans la
+                                rédaction de leur Business Plan,
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Vous présenterez votre projet devant jury</span> lors une journée de soutenance orale courant
+                                février 2015.
+                            </li>
+                            <li>
+                                Les Challengers qui le souhaitent peuvent également participer au challenge parallèle
+                                <span style="font-weight: bold;">« Coup de cœur du web »</span> et soumettre un résumé de leur projet aux internautes pour
+                                bénéficier d’une campagne de <span style="font-weight: bold;">crowdfunding</span>.
+                            </li>
+                        </ol>
+                        <p style="text-align: center; font-weight: bold;">
+                            Téléchargez le bulletin d’inscription<br>
+                            A retourner avant le 31/10/14 à contact@challengeenacalumniavico.com<br>
+                            <a href="" title="Télécharger le bulletin d'inscription">
+                                <img src="images/iconePdf.png" alt="pdf" style="height: 50px;">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="header" id="a3">
+                        <img src="images/barre_prix.png" alt="LES PRIX" class="title">
+                        <img src="images/fleche.png" alt="fleche" class="fleche">
+                    </div>
+                    <div class="body a3 prices">
+                        <div class="row" style="margin-top: 50px;">
+                            <div class="col-md-12">
+                                <img src="images/cup.png" alt="cup" style="height: 50px;">
+                                <p>1er prix : 10 000 €</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/blueCup.png" alt="cup" style="height: 50px;">
+                                <p>2nd prix : 5 000 €</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/blueCup.png" alt="cup" style="height: 50px;">
+                                <p>3ème prix : 3 000 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header" id="a4">
+                        <img src="images/barre_jury.png" alt="LE JURY" class="title">
+                        <img src="images/fleche.png" alt="fleche" class="fleche">
+                    </div>
+                    <div class="body a4">
+
+                    </div>
+                    <div class="header" id="a5">
+                        <img src="images/barre_tuteurs.png" alt="LES TUTEURS" class="title">
+                        <img src="images/fleche.png" alt="fleche" class="fleche">
+                    </div>
+                    <div class="body a5">
+                        <p>Les Challengers pourront s’appuyer sur <span style="font-weight: bold;">les conseils des tuteurs du Challenge</span> pour préparer leur
+                        Business Plan et nouer de nouveaux contacts professionnels.</p>
+
+                        <p>Une cinquantaine de tuteurs, issus d’entreprises de transport aérien, de l’industrie aéronautique, du
+                        monde financier, des services officiels, membres de l’Enac Alumni Executive Club, du Club
+                        Entrepreneur, apporteront leur appui aux Challengers pendant la durée du concours.</p>
+
+                        <p>Les tuteurs ne sont pas membres du jury et l’accompagnement des Challengers n’est pas
+                        obligatoire.</p>
+                    </div>
+                    <div class="header"  id="a6">
+                        <img src="images/barre_medias.png" alt="MEDIAS" class="title">
+                        <img src="images/fleche.png" alt="fleche" class="fleche">
+                    </div>
+                    <div class="body a6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div id="slideshow-controls">
+            <button id="1" class="active"><img src="images/bouton_slideshow_plein.png" alt="button slideshow plein"></button>
+            <button id="2"><img src="images/bouton_slideshow_vide.png" alt="button slideshow vide"></button>
+            <button id="3"><img src="images/bouton_slideshow_vide.png" alt="button slideshow vide"></button>
+            <button id="4"><img src="images/bouton_slideshow_vide.png" alt="button slideshow vide"></button>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="clearfix">
+    <div class="wrap">
+        <div class="right">
+            <a href="https://www.facebook.com/challengeenacalumniavico?ref=hl" target="_blank">
+                <img class="icon social" id="facebook" src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="http://www.viadeo.com/groups/?containerId=0022e11nodr6cbjq&ga_from=Fu:/hub/listehub/;Fb%3AmyHubs%3Bfe%3Ahub-title" target="_blank">
+                <img class="icon social" id="viadeo" src="images/viadeo.png" alt="viadeo">
+            </a>
+            <a href="https://www.linkedin.com/groups?goback=.anb_37469_*2_*1_*1_*1_*1_*1&gid=37469" target="_blank">
+                <img class="icon social" id="linkedin" src="images/linkedin.png" alt="linkedin">
+            </a>
+            <a href="http://www.alumni.enac.fr" target="_blank">
+                <img id="enacImg" src="images/logo_enacalumni.png" alt="logo enac alumni">
+            </a>
+            <a href="http://www.avico.com/">
+                <img id="avico" src="images/avico_logo.jpg" alt="logo avico" target="_blank">
+            </a>
+        </div>
+        <div class="left downloads">
+            <a href="mailto:contact@challengeenacalumniavico.com">Contact</a>
+
+            <!--<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                x
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/logo.png" alt="logo" style="height: 50px;">
+                            <p>
+                                Challenge ENAC Alumni Avico,<br>
+
+                                7 avenue Edouard Belin<br>
+
+                                CS 54005<br>
+
+                                31055 Toulouse Cedex
+                            </p>
+
+
+                            <a href="mailto:contact@challengeenacalumniavico.com">contact@challengeenacalumniavico.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <div id="mentions">
+            <div class="header collapsed">
+                MENTIONS LEGALES
+                <img src="images/fleche_top.png" alt="fleche">
+            </div>
+            <div class="content" style="height: 0px;">
+                <p>
+                    Challenge ENAC Alumni Avico,<br>
+                    7 avenue Edouard Belin<br>
+                    CS 54005<br>
+                    31055 Toulouse Cedex<br>
+                </p>
+                <p>
+                    Site développé par <a href="http://www.romaincoeur.fr" target="_blank">Romain COEUR</a>
+                </p>
+            </div>
         </div>
     </div>
 </footer>
+
+</div>
 
 </body>
 </html>
