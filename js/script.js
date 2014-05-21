@@ -112,7 +112,7 @@ $(function() {
         {
             $(this).removeClass('collapsed');
             $('#downloads .content').animate(
-                { 'height': '140px' },
+                { 'height': '278px' },
                 300,
                 function(){
                     $('#downloads .header').addClass('expanded');
